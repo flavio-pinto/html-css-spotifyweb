@@ -1,0 +1,86 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+}
+
+/* LAYOUT */
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+/* MAIN WINDOW */
+#main-window {
+    flex-grow: 1;
+    display: flex;
+}
+
+
+/* SIDEBAR */
+#sidebar {
+    flex-basis: 230px; /* larghezza sidebar */
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-top {
+    flex-grow: 1;
+    background: #444;
+}
+
+.sidebar-bottom {
+    height: 80px; /*debug*/
+    background: #222;
+}
+
+/* CONTENT */
+#content {
+    position: relative;
+    flex-grow: 1;
+    background: #000;
+}
+
+.content-top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: rgba(100, 50,0, .5);
+    z-index: 1;
+}
+
+#content .scrollable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    /* 90px = height di content-top-bar */
+    padding: 90px 15px 30px;
+}
+
+.content-menu {
+    height: 80px; /*debug*/
+    background: #222;
+}
+
+.content-category {
+    height: 200px; /* Debug */
+}
+
+
+/* BOTTOM PLAYER */
+#player {
+    height: 80px; /*debug*/
+    background: #333;
+}
