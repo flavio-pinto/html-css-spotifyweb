@@ -210,7 +210,58 @@ body {
     align-items: center;
 }
 
+#player .player-commands .player-controller span {
+    padding: 0 10px;
+}
+
+#player .player-playing-bar {
+    align-items: center;
+}
+
+#player .player-playing-bar .progress-bar {
+    position: relative;
+    height: 4px;
+    width: 500px;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#player .player-playing-bar .progress-bar::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 2px;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+}
+
+
 #player .player-actions {
     flex-basis: 25%;
     justify-content: flex-end;
+}
+
+#player .player-actions .player-actions-box .volume-bar {
+    position: relative;
+    height: 4px;
+    width: 100px;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 2px;
+}
+
+#player .player-actions .player-actions-box .volume-bar::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 2px;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 2px;
 }
