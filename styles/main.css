@@ -182,14 +182,35 @@ body {
 
 /* BOTTOM PLAYER */
 #player {
+    background: #333;
     padding: 10px;
 }
 
-#player .player-commands {
-    justify-content: center;
-    flex-grow: 1;
+#player .player-info {
+    flex-basis: 25%;
+    align-items: center;
 }
 
-#player .player-info {
+#player .player-info .player-info-title {
+    margin-right: 40px;
+}
 
+#player .player-info .player-icons-box i:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+#player .player-info img {
+    width: 30px;
+    height: 30px;
+}
+
+#player .player-commands {
+    flex-basis: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#player .player-actions {
+    flex-basis: 25%;
+    justify-content: flex-end;
 }
