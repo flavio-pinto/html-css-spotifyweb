@@ -26,8 +26,20 @@
     font-size: 14px;
 }
 
+.fw-light {
+    font-weight: 300;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .transition {
     transition: color 0.5s;
+}
+
+.mgn-btm-30 {
+    margin-bottom: 30px;
 }
 
 .mgn-btm-20 {
@@ -53,4 +65,8 @@
 
 .list-style-none {
     list-style: none;
+}
+
+.pointer {
+    cursor: pointer;
 }
