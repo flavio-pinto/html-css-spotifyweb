@@ -131,7 +131,6 @@ body {
 }
 
 .content-menu {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -160,6 +159,10 @@ body {
     border-color: chartreuse;
 }
 
+.content-category > h2 {
+    font-size: 22px;
+}
+
 .playlist-container {
     flex-wrap: wrap;
 }
@@ -179,6 +182,14 @@ body {
 
 /* BOTTOM PLAYER */
 #player {
+    padding: 10px;
+}
 
-    background: #333;
+#player .player-commands {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#player .player-info {
+
 }
