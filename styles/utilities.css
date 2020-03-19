@@ -1,0 +1,56 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITIES */
+.dsp-flex {
+    display: flex;
+}
+
+.algn-itm-ctr {
+    align-items: center;
+}
+
+.white-opaque {
+    color: rgba(255, 255, 255, .6);
+}
+
+.white {
+    color: rgba(255, 255, 255, 1);
+}
+
+.fsz-14 {
+    font-size: 14px;
+}
+
+.transition {
+    transition: color 0.5s;
+}
+
+.mgn-btm-20 {
+    margin-bottom: 20px;
+}
+
+.mgn-btm-10 {
+    margin-bottom: 10px;
+}
+
+.mgn-rgt-5 {
+    margin-right: 5px;
+}
+
+.mgn-rgt-10 {
+    margin-right: 10px;
+}
+
+.link-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list-style-none {
+    list-style: none;
+}

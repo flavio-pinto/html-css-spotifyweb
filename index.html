@@ -4,18 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify clone</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <link rel="stylesheet" href="styles/utilities.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
-    <div id="app">
+    <div id="app" class="dsp-flex">
         <!-- Main content -->
-        <main id="main-window">
+        <main id="main-window" class="dsp-flex">
             <!-- Sidebar -->
-            <aside id="sidebar">
-                <div class="sidebar-top">Logo e Nav</div>
+            <aside id="sidebar" class="dsp-flex">
+                <div class="sidebar-top">
+                    <div class="logo">
+                        <a href="#"><img src="img/logo.svg" alt=""></a>
+                    </div>
 
-                <div class="sidebar-bottom">Account</div>
+                    <div class="navbar mgn-btm-20 white-opaque">
+                        <ul class=navbar-list>
+                            <li class="navbar-list-item dsp-flex mgn-btm-10 transition"><img class="mgn-rgt-5" src="img/home.svg" alt="home"><span>Home</span></li>
+                            <li class="navbar-list-item dsp-flex mgn-btm-10 transition"><img class="mgn-rgt-5" src="img/search.svg" alt="search"><span>Cerca</span></li>
+                            <li class="navbar-list-item dsp-flex mgn-btm-10 transition"><img class="mgn-rgt-5" src="img/libreria.svg" alt="library"><span>La tua libreria</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="playlist-menu white-opaque">
+                        <h3 class="white mgn-btm-10">PLAYLIST</h3>
+                        <a class="playlist-button dsp-flex link-style mgn-btm-20 transition" href="#"><i class="playlist-button-icon mgn-rgt-10 fas fa-plus-square"></i><span class="playlist-button-name fsz-14">Crea Playlist</span></a>
+                        <ul class="playlist-all list-style-none">
+                            <li class="playlist-option transition mgn-btm-20"><a class="link-style" href="#">Post-Punk</a></li>
+                            <li class="playlist-option transition mgn-btm-20"><a class="link-style" href="#">Post-Rock</a></li>
+                            <li class="playlist-option transition mgn-btm-20"><a class="link-style" href="#">Industrial</a></li>
+                            <li class="playlist-option transition mgn-btm-20"><a class="link-style" href="#">Rock</a></li>
+                            <li class="playlist-option transition mgn-btm-20"><a class="link-style" href="#">Indie</a></li>
+                            <li class="playlist-option transition mgn-btm-20"><a class="link-style" href="#">Electronic</a></li>
+                            <li class="playlist-option transition mgn-btm-20"><a class="link-style" href="#">Folk</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="sidebar-bottom white-opaque">
+                    <a class="sidebar-bottom-install-spotify link-style transition" href="#"><i class="mgn-rgt-10 fas fa-arrow-alt-circle-down"></i>Installa app</a>
+                    <a class="sidebar-bottom-username dsp-flex algn-itm-ctr link-style fsz-14" href="#"><img class="mgn-rgt-10" src="img/profile.svg" alt="profile-pic" height="24px">Flavio Pinto</a>
+                </div>
             </aside>
 
             <!-- Content -->

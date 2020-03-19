@@ -1,17 +1,13 @@
-/* GENERAL */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    background: black;
 }
 
 /* LAYOUT */
 #app {
-    display: flex;
     flex-direction: column;
     height: 100vh;
 }
@@ -20,25 +16,80 @@ body {
 /* MAIN WINDOW */
 #main-window {
     flex-grow: 1;
-    display: flex;
 }
 
 
 /* SIDEBAR */
 #sidebar {
-    flex-basis: 230px; /* larghezza sidebar */
-    display: flex;
+    flex-basis: 200px; /* larghezza sidebar */
     flex-direction: column;
 }
 
 .sidebar-top {
     flex-grow: 1;
-    background: #444;
+}
+
+.sidebar-top a img {
+    height: 40px;
+    margin: 20px 0 20px 20px;
+}
+
+.sidebar-top .navbar .navbar-list .navbar-list-item {
+    align-items: center;
+    padding: 2px 0 2px 18px;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+}
+
+.sidebar-top .navbar .navbar-list .navbar-list-item:hover {
+    border-left-color: chartreuse;
+    color: rgba(255, 255, 255, 1);
+}
+
+.sidebar-top .navbar .navbar-list .navbar-list-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.playlist-menu {
+    margin-left: 20px;
+}
+
+.playlist-menu .playlist-button {
+    align-items: center;
+}
+
+.playlist-menu .playlist-button:hover,
+.playlist-menu .playlist-all .playlist-option:hover,
+.sidebar-bottom .sidebar-bottom-install-spotify:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.playlist-menu .playlist-button .playlist-button-icon {
+    font-size: 40px;
 }
 
 .sidebar-bottom {
-    height: 80px; /*debug*/
-    background: #222;
+    width: 100%;
+    padding: 20px;
+}
+
+.sidebar-bottom .sidebar-bottom-install-spotify,
+.sidebar-bottom .sidebar-bottom-username {
+    display: block;
+}
+
+.sidebar-bottom .sidebar-bottom-install-spotify {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.sidebar-bottom .sidebar-bottom-username {
+    display: flex; /* DEBUG:  */
+    align-items: center; /* DEBUG:  */
+    padding-top: 10px;
+    color: white; /* DEBUG:  */
+    font-weight: 700;
 }
 
 /* CONTENT */
