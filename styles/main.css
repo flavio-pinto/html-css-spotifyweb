@@ -35,7 +35,6 @@ body {
 }
 
 .sidebar-top .navbar .navbar-list .navbar-list-item {
-    align-items: center;
     padding: 2px 0 2px 18px;
     border-left: 3px solid transparent;
 }
@@ -55,7 +54,7 @@ body {
 }
 
 .playlist-menu .playlist-button {
-    align-items: center;
+    align-items: center; /* DEBUG:  */
 }
 
 .playlist-menu .playlist-button:hover,
@@ -132,7 +131,6 @@ body {
 
 .content-menu {
     justify-content: center;
-    align-items: center;
 }
 
 .content-menu .content-menu-list .content-menu-option {
@@ -147,7 +145,7 @@ body {
     transform: translateX(-50%);
     bottom: 0;
     height: 1px;
-    width: 30%;
+    width: 40px;
     border-bottom: 1px solid transparent;
 }
 
@@ -188,7 +186,6 @@ body {
 
 #player .player-info {
     flex-basis: 25%;
-    align-items: center;
 }
 
 #player .player-info .player-info-title {
@@ -207,15 +204,10 @@ body {
 #player .player-commands {
     flex-basis: 50%;
     flex-direction: column;
-    align-items: center;
 }
 
 #player .player-commands .player-controller span {
     padding: 0 10px;
-}
-
-#player .player-playing-bar {
-    align-items: center;
 }
 
 #player .player-playing-bar .progress-bar {
@@ -244,6 +236,10 @@ body {
 #player .player-actions {
     flex-basis: 25%;
     justify-content: flex-end;
+}
+
+#player .player-actions .player-actions-box .player-actions-icon:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 #player .player-actions .player-actions-box .volume-bar {
