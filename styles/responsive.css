@@ -1,0 +1,49 @@
+/* RESPONSIVE STYLES */
+
+@media all and (max-width: 600px) {
+    #sidebar {
+        flex-basis: 50px;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .sidebar-top {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sidebar-top a .large-logo,
+    .navbar .navbar-list span,
+    .playlist-menu,
+    .sidebar-bottom .sidebar-bottom-install-spotify span,
+    .sidebar-bottom .sidebar-bottom-username span {
+        display: none;
+    }
+
+    .sidebar-bottom .sidebar-bottom-install-spotify {
+        border-bottom: 50px;
+        padding: 0 0 0 0;
+        margin: 0;
+    }
+
+    .sidebar-top a .small-logo {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .sidebar-top .navbar .navbar-list .navbar-list-item,
+    .sidebar-top .navbar .navbar-list .navbar-list-item img {
+        padding: 0;
+        margin-right: 0;
+        border-left: none;
+    }
+
+    .sidebar-bottom {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}

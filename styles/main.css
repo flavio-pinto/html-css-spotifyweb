@@ -29,9 +29,14 @@ body {
     flex-grow: 1;
 }
 
-.sidebar-top a img {
+.sidebar-top a .large-logo {
     height: 40px;
     margin: 20px 0 20px 20px;
+}
+
+.sidebar-top a .small-logo {
+    height: 40px;
+    display: none;
 }
 
 .sidebar-top .navbar .navbar-list .navbar-list-item {

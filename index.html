@@ -6,8 +6,9 @@
     <title>Spotify clone</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-        <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" href="styles/utilities.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
 
@@ -18,7 +19,8 @@
             <aside id="sidebar" class="dsp-flex">
                 <div class="sidebar-top">
                     <div class="logo">
-                        <a href="#"><img src="img/logo.svg" alt=""></a>
+                        <a class="large-logo" href="#"><img class="large-logo" src="img/logo.svg" alt=""></a>
+                        <a class="small-logo" href="#"><img class="small-logo" src="img/logo-small.svg" alt=""></a>
                     </div>
 
                     <div class="navbar mgn-btm-20 white-opaque">
@@ -46,8 +48,8 @@
                 </div>
 
                 <div class="sidebar-bottom white-opaque">
-                    <a class="sidebar-bottom-install-spotify link-style transition" href="#"><i class="mgn-rgt-10 fas fa-arrow-alt-circle-down"></i>Installa app</a>
-                    <a class="sidebar-bottom-username dsp-flex algn-itm-ctr link-style fsz-14" href="#"><img class="mgn-rgt-10" src="img/profile.svg" alt="profile-pic" height="24px">Jane Doe</a>
+                    <a class="sidebar-bottom-install-spotify link-style transition" href="#"><i class="mgn-rgt-10 fas fa-arrow-alt-circle-down"></i><span>Installa app</span></a>
+                    <a class="sidebar-bottom-username dsp-flex algn-itm-ctr link-style fsz-14" href="#"><img class="mgn-rgt-10" src="img/profile.svg" alt="profile-pic" height="24px"><span>Jane Doe</span></a>
                 </div>
             </aside>
 
