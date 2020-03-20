@@ -66,6 +66,14 @@
     margin-right: 10px;
 }
 
+.bdr-rd-50 {
+    border-radius: 50%;
+}
+
+.oflow-hid {
+    overflow: hidden;
+}
+
 .link-style {
     text-decoration: none;
     color: inherit;
