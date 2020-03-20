@@ -1,6 +1,7 @@
 /* RESPONSIVE STYLES */
 
 @media all and (max-width: 600px) {
+    /* SIDEBAR */
     #sidebar {
         flex-basis: 50px;
         align-items: center;
@@ -45,5 +46,39 @@
         flex-direction: column;
         padding: 0;
         margin-bottom: 10px;
+    }
+
+    /* CONTENT MENU */
+    .content-menu-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* CONTENT */
+    .playlist-container {
+        flex-wrap: wrap;
+    }
+
+    .playlist-container .playlist-box {
+        flex-basis: calc(100% / 2 - 10px);
+    }
+
+    /* PLAYER */
+    #player .player-playing-bar .progress-bar {
+        width: 150px;
+    }
+
+    #player .player-actions .player-actions-box .volume-bar {
+        width: 70px;
+    }
+}
+
+@media all and (min-width: 601px) and (max-width: 1024px) {
+    .playlist-container {
+        flex-wrap: wrap;
+    }
+
+    .playlist-container .playlist-box {
+        flex-basis: calc(100% / 4 - 10px);
     }
 }

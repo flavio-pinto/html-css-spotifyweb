@@ -166,10 +166,6 @@ body {
     font-size: 22px;
 }
 
-.playlist-container {
-    flex-wrap: wrap;
-}
-
 .playlist-container .playlist-box {
     flex-basis: calc(100% / 6 - 10px);
 }
@@ -247,6 +243,7 @@ body {
 #player .player-commands {
     flex-basis: 50%;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 #player .player-commands .player-controller span {
